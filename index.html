@@ -12,7 +12,6 @@
       var stop = "stop drinking coffee for today !";
       var onemore = "you can have one more today";
       var howmany = 4 - drunkCoffee;
-
       var more = "you can have " + howmany + " more today";
 
 
@@ -23,14 +22,16 @@
 
 
       if (drunkCoffee >= 4 ) {
-        console.log(stop)
+        console.log(stop);
         $("h1").html(stop);
       }
       else if (drunkCoffee >= 3) {
         $("h1").html(onemore);
+        console.log(onemore)
       }
       else {
         $("h1").html(more);
+        console.log(more)
       }
 
 
