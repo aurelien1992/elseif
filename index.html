@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>manipulating html</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      // var response = prompt("What is your favorite food?");
+      // console.log(response);
+      var drunkCoffee = prompt("How many coffees did you have today ?");
+      var stop = "stop drinking coffee for today !";
+      var onemore = "you can have one more today";
+      var howmany = 4 - drunkCoffee;
+
+      var more = "you can have " + howmany + " more today";
+
+
+    //  $(".color").css("background-color:" + colorTshirt);
+    //  $(".color2").css("background-color:" + colorTshirt);
+    //  $(".color3").css("background-color:" + colorTshirt);
+
+
+
+      if (drunkCoffee >= 4 ) {
+        console.log(stop)
+        $("h1").html(stop);
+      }
+      else if (drunkCoffee >= 3) {
+        $("h1").html(onemore);
+      }
+      else {
+        $("h1").html(more);
+      }
+
+
+    });
+    </script>
+    <style>
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <h1></h1>
+
+  </body>
+
+</html>
